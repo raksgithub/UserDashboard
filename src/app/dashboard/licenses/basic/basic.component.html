@@ -1,0 +1,11 @@
+<div>
+  <h3>Basic Plan</h3>
+  <ul *ngFor="let basicPlan of basicPlans; let i=index;">
+    <li>({{ i }}) <span><i class="material-icons" style="cursor: pointer;font-size: 20px;" title="Edit License" (click)="editForm(i)">mode_edit</i></span></li>
+    <ul>
+      <li>Pricing: {{ basicPlan.pricing }}</li>
+      <li>Capacity: {{ basicPlan.capacity }}</li>
+      <li>Billibility Period: {{ basicPlan.billabilityPeriod }}</li>
+    </ul>
+  </ul>
+</div>

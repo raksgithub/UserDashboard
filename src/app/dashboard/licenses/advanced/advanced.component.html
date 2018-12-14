@@ -1,0 +1,9 @@
+<h3>Advanced Plan</h3>
+<ul *ngFor="let advancedPlan of advancedPlans; let i=index;">
+  <li>({{ i }}) <span><i class="material-icons" style="cursor: pointer;font-size: 20px;" title="Edit License">mode_edit</i></span></li>
+  <ul>
+    <li>Pricing: {{ advancedPlan.pricing }}</li>
+    <li>Capacity: {{ advancedPlan.capacity }}</li>
+    <li>Billibility Period: {{ advancedPlan.billabilityPeriod }}</li>
+  </ul>
+</ul>
